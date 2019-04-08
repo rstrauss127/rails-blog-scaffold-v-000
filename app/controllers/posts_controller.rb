@@ -1,4 +1,5 @@
 class PostsController < ActionRecord::Base
+  self.abstract_class = true
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
